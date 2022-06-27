@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #1a0b0d;
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+a {
+  color: #1a0b0d;
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  background-color: #f3eef0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  /* Animação */
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-50px);
+}
+
+.subtitulo {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+
+  /* Animação */
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-50px);
+}
+
+/* Blocos da página */
+.container {
+  /* Grid */
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(1, 400px);
+  justify-content: center;
+}
+
+.container-box {
+  background-color: #f3d0dc;
+  border-radius: 1.1rem;
+  box-shadow: 0 1px 3px #d696a2;
+  padding: 0.8rem;
+  text-align: center;
+
+  /* Animação */
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-50px);
+  animation-timing-function: ease;
+}
+
+.container-box:hover {
+  background-color: #f7a4b4;
+  box-shadow: 0 1px 3px #f7a4b4;
+  border-radius: 1.6rem;
+  transition: all 0.2s;
+}
+
+/* Redes sociais */
+.redesSociais {
+  margin: 1rem;
+}
+
+.redesSociais-box {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1.2rem;
+  justify-content: center;
+}
+
+.redesSociais-box-icon {
+  /* Animação */
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(50px);
+  animation-timing-function: ease;
+}
+
+/* Rodapé */
+footer {
+  bottom: 0;
+  margin: 4rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+
+  /* Animação */
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(50px);
+  animation-timing-function: ease;
+}
+
+.copyright {
+  font-family: sans;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Animação */
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
